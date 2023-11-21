@@ -51,17 +51,14 @@ export const TransForm = ({ getAllTrans }) => {
   ];
 
   return (
-    <div className="mt-5">
+    <div className="">
       {resp.message && (
         <Alert variant={resp.status === "success" ? "success" : "danger"}>
           {" "}
           {resp.message}
         </Alert>
       )}
-      <Form
-        onSubmit={handleOnSubmit}
-        className="shadow-lg border rounded p-3 bg-secondary"
-      >
+      <Form onSubmit={handleOnSubmit} className="shadow-lg border rounded p-3 ">
         <Row>
           <Col md={2}>
             <Form.Group className="mb-3">
